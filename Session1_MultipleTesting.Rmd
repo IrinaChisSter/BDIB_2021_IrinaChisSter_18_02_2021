@@ -14,7 +14,7 @@ editor_options:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Multiple testing outline
+# MULTIPLE TESTING OUTLINE
 
 -   Reminder of concept associated with ONE hypothesis testing
 
@@ -26,7 +26,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 -   The associated concept of power
 
-# One hypothesis testing philosophy
+# ONE HYPOTHESIS TESTING PHILOSOPHY
 
 -   Any experiment, no matter how well conducted, is subjected to events
     which can happen by chance
@@ -51,7 +51,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 -   The table below summarizes all the needed elements of this setting
 
-# One hypothesis testing and decisions - formal concepts
+# FORMALIZING ONE HYPOTHESIS TESTING AND DECISIONS
 
 ![](Table3_Decisions.png)
 
@@ -87,7 +87,7 @@ knitr::opts_chunk$set(echo = TRUE)
     -   **Sample size** - minimum necessary numbers to reach a
         meaningful conclusion following planning
 
-# **Multiple testing - what is the problem?**
+# MULTIPLE TESTING - WHY IS IT THE PROBLEM?
 
 -   Genomics = Big data = Massive number of hypothesis tests may be
     necessary
@@ -113,7 +113,7 @@ probability of at least 1 false positive?
 -   Old problem, same principles - but different approaches in classical
     and genetic epidemiology
 
-# **How to count/assess errors in multiple testing?**
+# ASSESSING/COUNTING ERRORS IN MULTIPLE TESTING
 
 ![](Table4_Decisions.png)
 
@@ -141,7 +141,7 @@ probability of at least 1 false positive?
     observable random variable, and S, T, U, and V are all unobservable
     random variables.
 
-# **How to count errors and what to do about it?**
+# WHAT TO DO ABOUT IT?
 
 -   Deterministic question: can we ever reach perfection? Deterministic
     answer: NO
@@ -156,7 +156,7 @@ probability of at least 1 false positive?
 -   [**Terminology:**]{.ul} adjusting the reference value for type one
     error (α) for the number of hypothesis tests performed
 
-## Classical epidemiology - a couple of independent tests
+## CLASSICAL EPIDEMIOLOGY - A COUPLE OF TESTS A PRIORI PLANNED
 
 -   [***Bonferroni correction***]{.ul} a very simple method for ensuring
     that the overall Type 1 error is maintained as planned when
@@ -177,7 +177,7 @@ probability of at least 1 false positive?
     only tests with a p-value less than $0.05/10000=5\times 10^{-6}$
     will be significant!
 
-## Corrections associated with genetic epidemiology
+## GENETIC EPIDEMIOLOGY - HANDLING LARGE NUMBER OF TESTS
 
 -   **Family Wise Error Rate (FWER)**
 
@@ -198,7 +198,7 @@ probability of at least 1 false positive?
 -   False [***discovery***]{.ul} rate:$FDR=\frac{V}{R}$ **designed to
     control the proportion of false positives out of all rejections**
 
-## **Benjamini and Hochberg FDR worked example - R**
+## BENJAMINI and HOCHBERG FDR WORKED EXAMPLE IN R
 
 -   To control FDR at a desirable level $\sigma$
 

@@ -49,16 +49,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
         -   Visualize: bars of frequencies or percentages
 
--   **Data summary: an assessment, a succinct and relevant communication
-    on data at hand -- purely descriptive and restricted to the sample
-    we work on**
+-   **Data summary:** an assessment, a succinct and relevant
+    communication on data at hand -- purely descriptive and restricted
+    to the sample we work on
 
 # INFERENTIAL CONCEPTS
 
--   **Inference: A statistical process aiming at drawing conclusions to
-    larger populations - those the samples are coming from. Correctly
+-   **Inference:** A statistical process aiming at drawing conclusions
+    to larger populations - those the samples are coming from. Correctly
     designed, studies aim at producing generalizable results of
-    numerical characteristics of the population.**
+    numerical characteristics of the population.
 
 -   **Hypotheses tests** - understanding the extent to which our
     observations may be attributable to chance
@@ -116,7 +116,7 @@ knitr::opts_chunk$set(echo = TRUE)
         hypothesis** - the smaller the p-value the greater the evidence
         against the null
 
-# **BINARY and CATEGORICAL data -- main focus of this presentation**
+# BINARY and CATEGORICAL data -- main focus of this presentation
 
 -   Real world data can be of various nature - [**quantitative**]{.ul}
     disease traits valuable
@@ -152,6 +152,18 @@ knitr::opts_chunk$set(echo = TRUE)
     such as mean, proportion, etc. - specific to any targeted
     estimate**]{.ul}
 
+-   **NULL HYPOTHESIS**: a statement which claims NO difference
+
+-   **ALTERNATIVE HYPOTHESIS**: a statement which claims some difference
+
+-   Decision:
+
+    -   If the p-value\<0.05 - reject the null, evidence for the
+        alternative
+
+    -   If the p-value\>=0.05 - do NOT reject the null, the data are
+        consistent with the null
+
 ## Before data analysis
 
 -   One sample or two samples - dependent or independent ?
@@ -164,13 +176,16 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Given the data
 
--   **Test statistic**
+-   **Test statistic** calculation
 
     -   A quantity which uses what we observe from the data at hand (and
         potentially a values which we test against)
 
-    -   Test statistic - a number which is placed on the X axis of a
-        reference distribution
+    -   A number which is placed on the X axis of a reference
+        distribution
+
+    -   Its value would indicate how far is the sample from what the
+        null hypothesis states
 
 -   The test static calculation and the reference distribution
     [***depend on the data type***]{.ul} which needs to be recognized by
@@ -186,7 +201,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
     ![](ChiSquaredDistribution.png)
 
-## Hypothesis testing - categorical data examples
+# HYPOTHESIS TESTING - CATEGORICAL DATA
 
 ### One sample test for proportion -small numbers
 
@@ -271,7 +286,9 @@ res
 A random group of people are tested for a benign respiratory condition
 which, if not managed, can lead to more severe manifestations.
 Clinicians wanted to see if a 6 months exercise intervention improve a
-respiratory parameter.
+respiratory parameter. "Below" a certain threshold indicated no effect,
+above indicated some effect. All participants were measured upon
+recruitment and at the end of 6 months.
 
 ```{r}
 set.seed(2350)
@@ -323,12 +340,6 @@ two_by_two_table<-rbind(disease, non_disease) ##bind them in a table so chi squa
 two_by_two_table ##display the table
 chisq.test(two_by_two_table) ##test for independence in proportions
 
-
-x <- data.frame(Cases=c(60, 40),Control=c(100, 300))
-rownames(x) <- c("Smokers","Non smokers")
-x
-table2x2(x)
-mosaicplot(t(x), col = c("firebrick", "goldenrod1"), cex.axis = 1, sub = "Disease", ylab = "Relative frequency", main = "")
 
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: "Reminder: basic epidemiology"  
+title: "Basic Epidemiology associated with categorical data"  
 author: "Dr Irina Chis Ster"
 date: "21/01/2021"
 output:
@@ -32,7 +32,7 @@ editor_options:
 
     -   Optimal resource allocation
 
-# **ESSENTIAL CONCEPTS IN EPIDEMIOLOGY**
+# ESSENTIAL CONCEPTS IN EPIDEMIOLOGY
 
 -   Individual = unit of interest in **clinical medicine**
 
@@ -79,7 +79,7 @@ editor_options:
     -   Hypotheses tests-- [**association**]{.ul} between
         [**outcome**]{.ul} (disease) and [**exposure**]{.ul}
 
-# **Measuring the disease in the population (1)**
+# MEASURES OF DISEASE IN THE POPULATION
 
 -   **Absolute measures** -- to understand disease burden or populations
     characteristics
@@ -120,7 +120,7 @@ editor_options:
 
     -   Reference values for ratios: 1 and for differences: 0
 
-# **Measuring the disease in the population - examples**
+# BASIC MODELS FOR DISEASE IN THE POPULATION
 
 -   [***ABSOLUTE MEASURES***]{.ul}: Risk, odds, rates in a population
 
@@ -146,7 +146,7 @@ editor_options:
 
     -   $\pi=\frac{\Omega}{(1+\Omega)}$
 
--   ACCOUNTING FOR A KNOWN EXPOSURE
+    # ACCOUNTING FOR A KNOWN EXPOSURE
 
     ![](DiseaseProbModel2.png)
 
@@ -159,8 +159,10 @@ editor_options:
     -   ODDS RATIOS=OR=$\frac{ODDS_{exposed}}{ODDS_{nonexposed}}$
         -(always\>0)
 
-    -   In the example above RR=2, OR\~2 - always the case in rare
-        disease situation (prevalence less than 5% in the population)
+    -   In the example above RR=2 and OR\~2
+
+    -   If the disease is rare in the population (prevalence less than
+        5% in the population) then OR\~RR
 
 ```{r}
 disease<-c(60, 40) ##create the disease vectors
@@ -173,6 +175,7 @@ two_by_two_table ##display the table
 oddsratio(two_by_two_table, method = "wald")
 ```
 
+
 ```{r}
 disease<-c(60, 40) ##create the disease vectors
 non_disease<-c(100,300) ##create the disease vectors
@@ -181,9 +184,11 @@ total
 two_by_two_table<-rbind(disease, non_disease) ##bind them in a table so chi squared R
 two_by_two_table ##display the table
 
-help(riskratio)
+
 riskratio(two_by_two_table, rev = "both", method = "wald")
 ```
+
+
 
 ```{r}
 x <- data.frame(Cases=c(60, 40),Control=c(100, 300))
@@ -193,7 +198,7 @@ mosaicplot(t(x), col = c("firebrick", "goldenrod1"), cex.axis = 1, sub = "Diseas
 table2x2(x)
 ```
 
-# **A GENERIC 2 by 2 table**
+# A GENERIC 2 by 2 TABLE
 
 ![](GenericTwoByTwoTable.png)
 
@@ -226,9 +231,6 @@ $$\frac{\frac{A}{B}}{\frac{C}{D}}=\frac{{A}\times{D}}{{B}\times{C}} $$
 -   The uncertainty of the $ln(OR)$, i.e. the 95%CI is
     $$ln(\frac{{A}\times{D}}{{B}\times{C}})-1.96\times \sqrt{\frac{1}{A}+\frac{1}{B}+\frac{1}{C}+\frac{1}{D}},      ln(\frac{{A}\times{D}}{{B}\times{C}})+1.96\times \sqrt{\frac{1}{A}+\frac{1}{B}+\frac{1}{C}+\frac{1}{D}}$$
 
-```{=html}
-<!-- -->
-```
 -   When referring to the OR of the disease
 
     -   If OR \>1 - the exposure is harmful

@@ -1,5 +1,5 @@
 ---
-title: "Case control studies and meta-analyses"  
+title: "CASE-CONTROL STUDIES and META-ANALYSIS FOR ODDS RATIOS"  
 author: "Dr Irina Chis Ster"
 date: "21/01/2021"
 output:
@@ -47,7 +47,10 @@ editor_options:
 -   Two central challenges: [***bias and confounding***]{.ul} Generally
     impossible to discard completely but possible to minimise them
 
-## Cohort studies vs. case control studies
+## COHORT STUDIES vs. CASE-CONTROL STUDIES
+
+-   Not all comparative studies between groups of patients and healthy
+    individuals are case-control stydies
 
 -   Both case-control and cohort studies have similar goals , i.e., to
     estimate the magnitude of association between an exposure and an
@@ -188,98 +191,6 @@ editor_options:
 -   Small initial studies rarely find the correct result, and even when
     they do are likely to overestimate the true effect size.
 
-If such an under-powered study generates positive findings, those will
-need to be replicated in a second, ideally larger, sample.EPIDEMIOLOGY
--- A QUANTITATIVE SCIENCE
-
-## 
-
-## ADVANTAGES OF CASE-CONTROL STUDIES
-
--   Cost effective relative to other analytical studies such as cohort
-    studies.
-
--   Case-control studies can have a retrospective efficient design, i.e.
-    cases are identified at the beginning of the study; therefore there
-    is no long follow up period (as compared to cohort studies).
-
--   Efficient for the study of diseases with long latency periods.
-
--   Efficient for the study of **rare diseases**.
-
--   Good for examining **multiple exposures**.
-
-## DISADVANTAGES OF CASE-CONTROL STUDIES
-
--   Particularly prone to bias; especially selection, recall and
-    observer bias.
-
--   Case-control studies are limited to examining one outcome (albeit
-    multiple exposures).
-
--   Not suitable to estimate risk of disease (unless study is population
-    based).
-
--   Poor choice for the study of **rare exposures**.
-
--   The temporal sequence between exposure and disease may be difficult
-    to determine.
-
-## THE QUALITY OF A STUDY IN CLASSICAL EPIDEMIOLOGY
-
--   Question: how good is a study? What are the concepts which measure
-    its quality?
-
--   Appropriate study design and population representation -- NECESSARY
-    BUT NOT SUFFICIENT
-
--   Three elements intrinsically related, which should be reported all
-    together and which are the determinants of the [***minimum necessary
-    sample size***]{.ul} under the considerations below
-
-    -   [***Type 1 error***]{.ul} - the smaller the desired type 1
-        error - the larger the sample size required
-
-    -   [***Type 2 error***]{.ul} - larger the power (the smaller the
-        type 2 error) -- the larger the required sample size
-
-    -   [***The effect size:***]{.ul}
-
-        -   at its simplest, this is the difference (ratio) between two
-            groups (case and controls) we hypothesise a priori and which
-            is epidemiological, clinically, biologically relevant
-
-        -   The smaller the effect size -- the larger the required
-            sample size
-
--   Any study should be discussed and understood in this context
-
--   A variety of methodologies for sample size calculation apply
-    --mainly depending on [***study design***]{.ul} and the [***nature
-    of the outcome***]{.ul} for which we seek evidence
-
-## THE QUALITY OF A STUDY IN GENETIC EPIDEMIOLOGY
-
--   Principles from classical epidemiology still hold
-
--   Genetic association studies have two main stages:
-    [***exploratory***]{.ul} and [***confirmatory***]{.ul}
-
--   The later (confirmatory/replication) stage -- source of frustration
-    and confusion has been the frequency with which initial positive
-    findings are not confirmed.
-
--   How good a candidate is the gene?
-
--   Since there are up to 30 000 genes in the human genome, and it is
-    unlikely that more than a few hundred make a meaningful contribution
-    to variation in any single phenotype, the a priori probability that
-    any gene selected at random will influence a given trait is very
-    low.
-
--   Small initial studies rarely find the correct result, and even when
-    they do are likely to overestimate the true effect size.
-
 -   If such an under-powered study generates positive findings, those
     will need to be replicated in a second, ideally larger, sample.
 
@@ -288,9 +199,9 @@ need to be replicated in a second, ideally larger, sample.EPIDEMIOLOGY
 *The Lancet -- Genetic Epidemiology series Genetic epidemiology 5 What
 makes a good association study? By Andrew T Hattersley, Mark I McCarthy*
 
-**Combined evidence from multiple studies is particularly desirable**
+-   Combined evidence from multiple studies is particularly desirable
 
-# Meta analyses
+# META ANALYSIS
 
 ## Generalities
 
@@ -319,9 +230,18 @@ makes a good association study? By Andrew T Hattersley, Mark I McCarthy*
 
 -   The analysis of the analyses
 
+-   The figures below are from Yuwadee Ngamwong et. al., Additive
+    Synergism between Asbestos and Smoking in Lung Cancer Risk: A
+    Systematic Review and Meta-Analysis,
+    (<https://doi.org/10.1371/journal.pone.0135798> )
+
 ![](Meta_allA.png)
 
--   Interpretation
+Meta analysis forest plot: Summary odds ratio of lung cancer for
+asbestos-exposed and smoking compared with not asbestos-exposed and
+non-smoking.
+
+Understanding the forest plot:
 
 -   Vertical black line -- reference value of 1 for OR
 
@@ -384,6 +304,12 @@ makes a good association study? By Andrew T Hattersley, Mark I McCarthy*
 
 ![](Meta_split.png)
 
+(A) Summary odds ratio of asbestos-exposed and non-smoking compared with
+not asbestos-exposed and non-smoking
+
+(B) Summary odds ratio of non-exposure to asbestos and smoking compared
+with not asbestos-exposed and non-smoking.
+
 Non--smoking:
 
 -   Pooled odds ratio of asbestos-exposed compared with not
@@ -415,6 +341,36 @@ Smoking:
 -   What to do? Investigating sources of heterogeneity
 
 -   Eliminate extremes and re-run
+
+# EXAMPLE OF META ANALYSIS - CASE CONTROL STUDIES
+
+## Data needed
+
+-   A couple of studies - no definite rule but the more the better
+
+-   Number of cases by exposure;, i.e.
+
+    -   number of cases in exposed
+
+    -   number of cases in non-exposed
+
+    -   number of non-cases in exposed
+
+    -   number of non-cases in non-exposed
+
+-   Bacille Calmette Guerin (BCG) is the most widely used vaccination in
+    the world. Developed in the 1930s and made of a live, weakened
+    strain of Mycobacterium bovis, the BCG is the only vaccination
+    available against tuberculosis today. Colditz et al. (1994) report
+    data from 13 clinical trials of BCG vaccine each investigating its
+    efficacy in the treatment of tuberculosis. The number of subjects
+    suffering from TB with or without BCG vaccination are given here.
+    These two variables will be used **to investigate and perhaps
+    explain any heterogeneity among the studies**.
+
+    -   Cases and non cases: TB and non TB
+
+    -   Exposure BCG vaccination
 
 ```{r }
 #dat.bcg<-read.table("BCG.txt", sep=",")
@@ -451,10 +407,23 @@ bquote(paste(" (Q = ",.(formatC(res1$QE, digits=2, format="f")),
                         ", p = ", .(formatC(res1$QEp, digits=2, format="f")), "; 
              ", I^2, " = ", .(formatC(res1$I2, digits=1, format="f")), "%)")))
 par(op)
+```
 
+```{r}
 ##some departure from normality
 qqnorm(res1, main = "Random-Effects Model")
 
+```
+
+A funnel plot shows the observed effect sizes or outcomes on the x-axis
+against some measure of precision of the observed effect sizes or
+outcomes on the y-axis. In the absence of publication bias and
+heterogeneity, one would then expect to see the points forming a funnel
+shape, with the majority of the points falling inside of the
+pseudo-confidence region.
+
+```{r}
+##
 rtf <- trimfill(res1)
 funnel(rtf)
 
@@ -474,7 +443,7 @@ funnel(rtf)
 -   Hence TIME is less of an issue in these studies as the genetic
     heritage does not change
 
-## Genetic wide association studies (GWAS) -- case-control studies
+# Genetic wide association studies (GWAS) -- case-control studies
 
 -   Time is of no relevance in GWAS
 
