@@ -395,27 +395,46 @@ summary {
 </ul>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuICBiaW5vbS50ZXN0KDMsIDUsIHAgPSAwLjYsIGFsdGVybmF0aXZlID0gYyggXCJncmVhdGVyXCIpLCBjb25mLmxldmVsID0gMC45NSlcbiAgcHJvcC50ZXN0KDMsIDUsIHA9MC42LCBhbHRlcm5hdGl2ZT1cImdyZWF0ZXJcIiwgY29uZi5sZXZlbD0wLjk1LCBjb3JyZWN0PVRSVUUpXG4gIFxuYGBgIn0= -->
-<pre class="r"><code>  binom.test(3, 5, p = 0.6, alternative = c( &quot;greater&quot;), conf.level = 0.95)
-  prop.test(3, 5, p=0.6, alternative=&quot;greater&quot;, conf.level=0.95, correct=TRUE)
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuICBiaW5vbS50ZXN0KDMsIDUsIHAgPSAwLjYsIGFsdGVybmF0aXZlID0gYyggXFxncmVhdGVyXFwpLCBjb25mLmxldmVsID0gMC45NSlcbiAgcHJvcC50ZXN0KDMsIDUsIHA9MC42LCBhbHRlcm5hdGl2ZT1cXGdyZWF0ZXJcXCwgY29uZi5sZXZlbD0wLjk1LCBjb3JyZWN0PVRSVUUpXG4gIFxuYGBgXG5gYGAifQ== -->
+<pre class="r"><code>```r
+  binom.test(3, 5, p = 0.6, alternative = c( \greater\), conf.level = 0.95)
+  prop.test(3, 5, p=0.6, alternative=\greater\, conf.level=0.95, correct=TRUE)
   </code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-chunk-end -->
-<!-- rnb-text-begin -->
-</div>
-<div id="one-sample-test-for-proportion--large-sample" class="section level3">
-<h3>One sample test for proportion -large sample</h3>
-<ul>
-<li><p>The Census Bureau reports that proportion of females in the US population is 0.508 (50.8%). A random sample from a particular state counts 5670 females out of 10000. Question: Is the proportion of women in this state different from that in the US population? What about a random sample of 1000 women which counts 567 women? Or a random sample of 100 women which counts 57 women?</p>
-<ul>
-<li><p><strong>The null hypothesis</strong>: the proportion of women in that state is the same as in the whole US</p></li>
-<li><p><strong>The alternative hypothesis</strong>: the proportion of women in that state is different from that in the whole US</p></li>
-</ul></li>
-</ul>
-<!-- rnb-text-end -->
-<!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuICBwcm9wLnRlc3QoNTY3MCwgMTAwMDAsIHA9MC41MDgsIGFsdGVybmF0aXZlPVwiZ3JlYXRlclwiLCBjb25mLmxldmVsPTAuOTUsIGNvcnJlY3Q9VFJVRSlcbiAgcHJvcC50ZXN0KDU2NyAsIDEwMDAgLCBwPTAuNTA4LCBhbHRlcm5hdGl2ZT1cImdyZWF0ZXJcIiwgY29uZi5sZXZlbD0wLjk1LCBjb3JyZWN0PVRSVUUpXG4gIHByb3AudGVzdCg1NyAgLCAxMDAgICwgcD0wLjUwOCwgYWx0ZXJuYXRpdmU9XCJncmVhdGVyXCIsIGNvbmYubGV2ZWw9MC45NSwgY29ycmVjdD1UUlVFKVxuYGBgIn0= -->
-<pre class="r"><code>  prop.test(5670, 10000, p=0.508, alternative=&quot;greater&quot;, conf.level=0.95, correct=TRUE)
+<pre><code>
+&lt;!-- rnb-source-end --&gt;
+
+&lt;!-- rnb-chunk-end --&gt;
+
+
+&lt;!-- rnb-text-begin --&gt;
+
+
+### One sample test for proportion -large sample
+
+-   The Census Bureau reports that proportion of females in the US
+    population is 0.508 (50.8%). A random sample from a particular state
+    counts 5670 females out of 10000. Question: Is the proportion of
+    women in this state different from that in the US population? What
+    about a random sample of 1000 women which counts 567 women? Or a
+    random sample of 100 women which counts 57 women?
+
+    -   **The null hypothesis**: the proportion of women in that state
+        is the same as in the whole US
+
+    -   **The alternative hypothesis**: the proportion of women in that
+        state is different from that in the whole US
+
+
+&lt;!-- rnb-text-end --&gt;
+
+
+&lt;!-- rnb-chunk-begin --&gt;
+
+
+&lt;!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuICBwcm9wLnRlc3QoNTY3MCwgMTAwMDAsIHA9MC41MDgsIGFsdGVybmF0aXZlPVwiZ3JlYXRlclwiLCBjb25mLmxldmVsPTAuOTUsIGNvcnJlY3Q9VFJVRSlcbiAgcHJvcC50ZXN0KDU2NyAsIDEwMDAgLCBwPTAuNTA4LCBhbHRlcm5hdGl2ZT1cImdyZWF0ZXJcIiwgY29uZi5sZXZlbD0wLjk1LCBjb3JyZWN0PVRSVUUpXG4gIHByb3AudGVzdCg1NyAgLCAxMDAgICwgcD0wLjUwOCwgYWx0ZXJuYXRpdmU9XCJncmVhdGVyXCIsIGNvbmYubGV2ZWw9MC45NSwgY29ycmVjdD1UUlVFKVxuYGBgIn0= --&gt;
+
+```r
+  prop.test(5670, 10000, p=0.508, alternative=&quot;greater&quot;, conf.level=0.95, correct=TRUE)
   prop.test(567 , 1000 , p=0.508, alternative=&quot;greater&quot;, conf.level=0.95, correct=TRUE)
   prop.test(57  , 100  , p=0.508, alternative=&quot;greater&quot;, conf.level=0.95, correct=TRUE)</code></pre>
 <!-- rnb-source-end -->
@@ -439,19 +458,6 @@ summary {
 # Printing the results
 res </code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5cdDItc2FtcGxlIHRlc3QgZm9yIGVxdWFsaXR5IG9mIHByb3BvcnRpb25zIHdpdGggY29udGludWl0eSBjb3JyZWN0aW9uXG5cbmRhdGE6ICBjKDUwLCAzMCkgb3V0IG9mIGMoNTAwLCAyMDApXG5YLXNxdWFyZWQgPSAzLjA1MTYsIGRmID0gMSwgcC12YWx1ZSA9IDAuMDgwNjZcbmFsdGVybmF0aXZlIGh5cG90aGVzaXM6IHR3by5zaWRlZFxuOTUgcGVyY2VudCBjb25maWRlbmNlIGludGVydmFsOlxuIC0wLjEwOTUzOTIwNiAgMC4wMDk1MzkyMDZcbnNhbXBsZSBlc3RpbWF0ZXM6XG5wcm9wIDEgcHJvcCAyIFxuICAwLjEwICAgMC4xNSBcbiJ9 -->
-<pre><code>
-    2-sample test for equality of proportions with continuity correction
-
-data:  c(50, 30) out of c(500, 200)
-X-squared = 3.0516, df = 1, p-value = 0.08066
-alternative hypothesis: two.sided
-95 percent confidence interval:
- -0.109539206  0.009539206
-sample estimates:
-prop 1 prop 2 
-  0.10   0.15 </code></pre>
-<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <ul>
@@ -463,7 +469,7 @@ prop 1 prop 2
 <p>A random group of people are tested for a benign respiratory condition which, if not managed, can lead to more severe manifestations. Clinicians wanted to see if a 6 months exercise intervention improve a respiratory parameter.</p>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2V0LnNlZWQoMjM1MClcbmRhdGEgPC0gZGF0YS5mcmFtZShiZWZvcmUgPSBzYW1wbGUoYyhcIkJlbG93XCIsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXCJCZWxvd1wiLFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiQmVsb3dcIixcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcIkJlbG93XCIsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXCJBYm92ZVwiKSxcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA1MDAsIHJlcGxhY2UgPSBUUlVFKSxcbiAgICAgICAgICAgICAgICAgICAgYWZ0ZXIgPSBzYW1wbGUoYyhcIkJlbG93XCIsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXCJCZWxvd1wiLFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiQmVsb3dcIixcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcIkJlbG93XCIsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXCJBYm92ZVwiKSxcbiAgICAgICAgICAgICAgICAgICAgICAgICAgIDUwMCwgcmVwbGFjZSA9IFRSVUUpKVxuXG50YWJsZShkYXRhJGJlZm9yZSwgZGF0YSRhZnRlcilcblxuIyN1bmRlcnN0YW5kIGhvdyB0aGUgd2VyZSBnZW5lcmF0ZWRcbk1jTmVtYXJUZXN0IDwtIG1jbmVtYXIudGVzdCh0YWJsZShkYXRhJGJlZm9yZSwgZGF0YSRhZnRlcikpXG5NY05lbWFyVGVzdFxuXG4jI3VuZGVyc3RhbmQgaG93IHRoZSB3ZXJlIGdlbmVyYXRlZCAtIHRoaXMgbWF5IGJlIHdyb25nXG5DaGlTcXVhcmVkVGVzdDwtcHJvcC50ZXN0KHRhYmxlKGRhdGEkYmVmb3JlLCBkYXRhJGFmdGVyKSlcbkNoaVNxdWFyZWRUZXN0XG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuc2V0LnNlZWQoMjM1MClcbmRhdGEgPC0gZGF0YS5mcmFtZShiZWZvcmUgPSBzYW1wbGUoYyhcIkJlbG93XCIsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXCJCZWxvd1wiLFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiQmVsb3dcIixcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcIkJlbG93XCIsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXCJBYm92ZVwiKSxcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA1MDAsIHJlcGxhY2UgPSBUUlVFKSxcbiAgICAgICAgICAgICAgICAgICAgYWZ0ZXIgPSBzYW1wbGUoYyhcIkJlbG93XCIsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXCJCZWxvd1wiLFxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIFwiQmVsb3dcIixcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBcIkJlbG93XCIsXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgXCJBYm92ZVwiKSxcbiAgICAgICAgICAgICAgICAgICAgICAgICAgIDUwMCwgcmVwbGFjZSA9IFRSVUUpKVxuXG50YWJsZShkYXRhJGJlZm9yZSwgZGF0YSRhZnRlcilcbmBgYCJ9 -->
 <pre class="r"><code>set.seed(2350)
 data &lt;- data.frame(before = sample(c(&quot;Below&quot;,
                                      &quot;Below&quot;,
@@ -478,16 +484,44 @@ data &lt;- data.frame(before = sample(c(&quot;Below&quot;,
                                      &quot;Above&quot;),
                            500, replace = TRUE))
 
-table(data$before, data$after)
-
-##understand how the were generated
+table(data$before, data$after)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiICAgICAgIFxuICAgICAgICBBYm92ZSBCZWxvd1xuICBBYm92ZSAgICAyMiAgICA3N1xuICBCZWxvdyAgIDEwMCAgIDMwMVxuIn0= -->
+<pre><code>       
+        Above Below
+  Above    22    77
+  Below   100   301</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyN1bmRlcnN0YW5kIGhvdyB0aGUgd2VyZSBnZW5lcmF0ZWRcbk1jTmVtYXJUZXN0IDwtIG1jbmVtYXIudGVzdCh0YWJsZShkYXRhJGJlZm9yZSwgZGF0YSRhZnRlcikpXG5NY05lbWFyVGVzdFxuYGBgIn0= -->
+<pre class="r"><code>##understand how the were generated
 McNemarTest &lt;- mcnemar.test(table(data$before, data$after))
-McNemarTest
+McNemarTest</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdE1jTmVtYXIncyBDaGktc3F1YXJlZCB0ZXN0IHdpdGggY29udGludWl0eSBjb3JyZWN0aW9uXG5cbmRhdGE6ICB0YWJsZShkYXRhJGJlZm9yZSwgZGF0YSRhZnRlcilcbk1jTmVtYXIncyBjaGktc3F1YXJlZCA9IDIuNzM0NSwgZGYgPSAxLCBwLXZhbHVlID0gMC4wOTgyXG4ifQ== -->
+<pre><code>
+    McNemar&#39;s Chi-squared test with continuity correction
 
-##understand how the were generated - this may be wrong
+data:  table(data$before, data$after)
+McNemar&#39;s chi-squared = 2.7345, df = 1, p-value = 0.0982</code></pre>
+<!-- rnb-output-end -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyN1bmRlcnN0YW5kIGhvdyB0aGUgd2VyZSBnZW5lcmF0ZWQgLSB0aGlzIG1heSBiZSB3cm9uZ1xuQ2hpU3F1YXJlZFRlc3Q8LXByb3AudGVzdCh0YWJsZShkYXRhJGJlZm9yZSwgZGF0YSRhZnRlcikpXG5DaGlTcXVhcmVkVGVzdFxuYGBgIn0= -->
+<pre class="r"><code>##understand how the were generated - this may be wrong
 ChiSquaredTest&lt;-prop.test(table(data$before, data$after))
 ChiSquaredTest</code></pre>
 <!-- rnb-source-end -->
+<!-- rnb-output-begin eyJkYXRhIjoiXG5cdDItc2FtcGxlIHRlc3QgZm9yIGVxdWFsaXR5IG9mIHByb3BvcnRpb25zIHdpdGggY29udGludWl0eSBjb3JyZWN0aW9uXG5cbmRhdGE6ICB0YWJsZShkYXRhJGJlZm9yZSwgZGF0YSRhZnRlcilcblgtc3F1YXJlZCA9IDAuMTg3MjQsIGRmID0gMSwgcC12YWx1ZSA9IDAuNjY1MlxuYWx0ZXJuYXRpdmUgaHlwb3RoZXNpczogdHdvLnNpZGVkXG45NSBwZXJjZW50IGNvbmZpZGVuY2UgaW50ZXJ2YWw6XG4gLTAuMTI1NjQ2MjQgIDAuMDcxMzM3NTZcbnNhbXBsZSBlc3RpbWF0ZXM6XG4gICBwcm9wIDEgICAgcHJvcCAyIFxuMC4yMjIyMjIyIDAuMjQ5Mzc2NiBcbiJ9 -->
+<pre><code>
+    2-sample test for equality of proportions with continuity correction
+
+data:  table(data$before, data$after)
+X-squared = 0.18724, df = 1, p-value = 0.6652
+alternative hypothesis: two.sided
+95 percent confidence interval:
+ -0.12564624  0.07133756
+sample estimates:
+   prop 1    prop 2 
+0.2222222 0.2493766 </code></pre>
+<!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <ul>
@@ -540,8 +574,9 @@ mosaicplot(t(x), col = c(&quot;firebrick&quot;, &quot;goldenrod1&quot;), cex.axi
 </ul>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIFxuIyNBZ2dyZWdhdGVkIGRhdGEgZm9ybWF0ICBcbmRpc2Vhc2U8LWMoMTA5LCAxMTgsIDI2KSAjI2NyZWF0ZSB0aGUgZGlzZWFzZSB2ZWN0b3JzXG5ub25fZGlzZWFzZTwtYygxMzgsIDg4LCAyMSkgIyNjcmVhdGUgdGhlIGRpc2Vhc2UgdmVjdG9yc1xudG90YWw8LWRpc2Vhc2Urbm9uX2Rpc2Vhc2UgIyNjcmVhdGUgdGhlIHRvdGFsIHZlY3RvcnNcbnRvdGFsXG50d29fYnlfdHdvX3RhYmxlPC1yYmluZChkaXNlYXNlLCBub25fZGlzZWFzZSkgIyNiaW5kIHRoZW0gaW4gYSB0YWJsZSBzbyBjaGkgc3F1YXJlZCBSIGNvbW1hbmQgd291bGQgdW5kZXJzdGFuZFxudHdvX2J5X3R3b190YWJsZSAjI2Rpc3BsYXkgdGhlIHRhYmxlXG5jaGlzcS50ZXN0KHR3b19ieV90d29fdGFibGUpICMjdGVzdCBmb3IgaW5kZXBlbmRlbmNlIGluIHByb3BvcnRpb25zXG5cbiMjRXhwYW5kZWQgZGF0YSBmb3JtYXRcbiBnZW5fZGF0YV9leHBhbmRlZDwtcmVhZC50YWJsZShcIkdlbm90eXBlQ2hpU3FBc3NvY19leHBhbmRlZF9jb21hLnR4dFwiLCBoZWFkZXI9VCxzZXA9XCIsXCIpXG4gZ2VuX2RhdGFfZXhwYW5kZWQgIyN2aXN1YWxpc2UgdGhlIGRhdGFcbiB0YWJsZShnZW5fZGF0YV9leHBhbmRlZClcbiBuYW1lcyhnZW5fZGF0YV9leHBhbmRlZCkgIyNjaGVjayB2YXJpYWJsZXM/IG5hbWVzXG4gdHdvX2J5X3R3b190YWJsZV9leHA8LXRhYmxlKGdlbl9kYXRhX2V4cGFuZGVkJGRpc2Vhc2UsZ2VuX2RhdGFfZXhwYW5kZWQkZ2Vub3R5cGUpIFxuICMjIENSRUFURSBBIFRBQkxFXG4gdHdvX2J5X3R3b190YWJsZV9leHAgIyN2aXN1YWxpc2UgdGhlIHRhYmxlXG4gY2hpc3EudGVzdCh0d29fYnlfdHdvX3RhYmxlX2V4cCkgIyN0ZXN0IGZvciBpbmRlcGVuZGVuY2UgaW4gcHJvcG9ydGlvbnNcbiBcblxuYGBgIn0= -->
-<pre class="r"><code> 
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuIFxuIyNBZ2dyZWdhdGVkIGRhdGEgZm9ybWF0ICBcbmRpc2Vhc2U8LWMoMTA5LCAxMTgsIDI2KSAjI2NyZWF0ZSB0aGUgZGlzZWFzZSB2ZWN0b3JzXG5ub25fZGlzZWFzZTwtYygxMzgsIDg4LCAyMSkgIyNjcmVhdGUgdGhlIGRpc2Vhc2UgdmVjdG9yc1xudG90YWw8LWRpc2Vhc2Urbm9uX2Rpc2Vhc2UgIyNjcmVhdGUgdGhlIHRvdGFsIHZlY3RvcnNcbnRvdGFsXG50d29fYnlfdHdvX3RhYmxlPC1yYmluZChkaXNlYXNlLCBub25fZGlzZWFzZSkgIyNiaW5kIHRoZW0gaW4gYSB0YWJsZSBzbyBjaGkgc3F1YXJlZCBSIGNvbW1hbmQgd291bGQgdW5kZXJzdGFuZFxudHdvX2J5X3R3b190YWJsZSAjI2Rpc3BsYXkgdGhlIHRhYmxlXG5jaGlzcS50ZXN0KHR3b19ieV90d29fdGFibGUpICMjdGVzdCBmb3IgaW5kZXBlbmRlbmNlIGluIHByb3BvcnRpb25zXG5cbiMjRXhwYW5kZWQgZGF0YSBmb3JtYXRcbiBnZW5fZGF0YV9leHBhbmRlZDwtcmVhZC50YWJsZShcXEdlbm90eXBlQ2hpU3FBc3NvY19leHBhbmRlZF9jb21hLnR4dFxcLCBoZWFkZXI9VCxzZXA9XFxcbmBgYCJ9 -->
+<pre class="r"><code>```r
+ 
 ##Aggregated data format  
 disease&lt;-c(109, 118, 26) ##create the disease vectors
 non_disease&lt;-c(138, 88, 21) ##create the disease vectors
@@ -552,16 +587,7 @@ two_by_two_table ##display the table
 chisq.test(two_by_two_table) ##test for independence in proportions
 
 ##Expanded data format
- gen_data_expanded&lt;-read.table(&quot;GenotypeChiSqAssoc_expanded_coma.txt&quot;, header=T,sep=&quot;,&quot;)
- gen_data_expanded ##visualise the data
- table(gen_data_expanded)
- names(gen_data_expanded) ##check variables? names
- two_by_two_table_exp&lt;-table(gen_data_expanded$disease,gen_data_expanded$genotype) 
- ## CREATE A TABLE
- two_by_two_table_exp ##visualise the table
- chisq.test(two_by_two_table_exp) ##test for independence in proportions
- 
-</code></pre>
+ gen_data_expanded&lt;-read.table(\GenotypeChiSqAssoc_expanded_coma.txt\, header=T,sep=\</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
@@ -572,20 +598,20 @@ chisq.test(two_by_two_table) ##test for independence in proportions
 </ul>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuICAjI2ZvciB0cmVuZHMgYmVzdCB0byBjcmVhdGUgZGF0YVxuIHZlY3Rvcl9jYXNlczwtYygxMDksIDExOCwgMjYpXG4gdmVjdG9yX25vbl9jYXNlczwtYygxMzgsIDg4LCAyMSlcbiB2ZWN0b3JfdG90YWw8LXZlY3Rvcl9jYXNlcyt2ZWN0b3Jfbm9uX2Nhc2VzXG4gcHJvcC50cmVuZC50ZXN0KHZlY3Rvcl9jYXNlcyx2ZWN0b3JfdG90YWwpXG5gYGAifQ== -->
-<pre class="r"><code>  ##for trends best to create data
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuYGBgclxuICAjI2ZvciB0cmVuZHMgYmVzdCB0byBjcmVhdGUgZGF0YVxuIHZlY3Rvcl9jYXNlczwtYygxMDksIDExOCwgMjYpXG4gdmVjdG9yX25vbl9jYXNlczwtYygxMzgsIDg4LCAyMSlcbiB2ZWN0b3JfdG90YWw8LXZlY3Rvcl9jYXNlcyt2ZWN0b3Jfbm9uX2Nhc2VzXG4gcHJvcC50cmVuZC50ZXN0KHZlY3Rvcl9jYXNlcyx2ZWN0b3JfdG90YWwpXG5gYGBcbmBgYCJ9 -->
+<pre class="r"><code>```r
+  ##for trends best to create data
  vector_cases&lt;-c(109, 118, 26)
  vector_non_cases&lt;-c(138, 88, 21)
  vector_total&lt;-vector_cases+vector_non_cases
  prop.trend.test(vector_cases,vector_total)</code></pre>
-<!-- rnb-source-end -->
-<!-- rnb-output-begin eyJkYXRhIjoiXG5cdENoaS1zcXVhcmVkIFRlc3QgZm9yIFRyZW5kIGluIFByb3BvcnRpb25zXG5cbmRhdGE6ICB2ZWN0b3JfY2FzZXMgb3V0IG9mIHZlY3Rvcl90b3RhbCAsXG4gdXNpbmcgc2NvcmVzOiAxIDIgM1xuWC1zcXVhcmVkID0gNi4xOTIzLCBkZiA9IDEsIHAtdmFsdWUgPSAwLjAxMjgzXG4ifQ== -->
 <pre><code>
-    Chi-squared Test for Trend in Proportions
+&lt;!-- rnb-source-end --&gt;
 
-data:  vector_cases out of vector_total ,
- using scores: 1 2 3
-X-squared = 6.1923, df = 1, p-value = 0.01283</code></pre>
+&lt;!-- rnb-output-begin eyJkYXRhIjoiXG5cdENoaS1zcXVhcmVkIFRlc3QgZm9yIFRyZW5kIGluIFByb3BvcnRpb25zXG5cbmRhdGE6ICB2ZWN0b3JfY2FzZXMgb3V0IG9mIHZlY3Rvcl90b3RhbCAsXG4gdXNpbmcgc2NvcmVzOiAxIDIgM1xuWC1zcXVhcmVkID0gNi4xOTIzLCBkZiA9IDEsIHAtdmFsdWUgPSAwLjAxMjgzXG4ifQ== --&gt;
+</code></pre>
+<pre><code>Chi-squared Test for Trend in Proportions</code></pre>
+<p>data: vector_cases out of vector_total , using scores: 1 2 3 X-squared = 6.1923, df = 1, p-value = 0.01283 ```</p>
 <!-- rnb-output-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->

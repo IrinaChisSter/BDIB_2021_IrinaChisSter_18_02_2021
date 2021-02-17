@@ -10,7 +10,7 @@ editor_options:
     wrap: 72
 ---
 
-## MAIN TYPES OF EPIDEMIOLOGICAL RESEARCH -bla
+## MAIN TYPES OF EPIDEMIOLOGICAL RESEARCH
 
 -   Observational
 
