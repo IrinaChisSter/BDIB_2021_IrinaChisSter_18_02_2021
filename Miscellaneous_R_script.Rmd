@@ -1,0 +1,85 @@
+---
+title: "Miscellaneous R script chunks"
+author: "Dr Irina Chis Ster"
+date: "21/01/2021"
+output:
+  html_notebook:
+    df_print: paged
+  pdf_document: default
+  html_document:
+    df_print: paged
+editor_options:
+  markdown:
+    wrap: 72
+---
+
+
+
+### Knitting package   
+ 
+This is needed for filles knitting and producing html notebook style file.
+```{r setup, include=TRUE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Check the R version   
+
+This part checks the version of R needed for the packages installation.
+```{r Check R version}
+if (grepl("Linux stats3", system("uname -a", intern=T))) {
+  if (R.version$version.string != "R version 3.5.3 (2019-03-11)"){
+    stop("Please choose R version 3.5.3 using the dropdown menu in the top right corner of RStudio Server.")
+  } else {
+    cat("R version correct!")
+  }
+}
+```
+
+### Packages
+
+When working on RStudio Server, packages will be loaded from a
+shared server drive.\
+Otherwise, packages will be installed/loaded  on your local computer.
+
+```{r}
+if (grepl("Linux stats3", system("uname -a", intern=T))) {
+  lib_loc <- "/homes/homedirs18/sghms/bms/shares/bdib/BDiB_2020-21/R/packages_R_3.5.3"
+  stopifnot(file.exists(lib_loc))
+  library(paran, lib.loc = lib_loc)
+  
+  library(ggplot2, lib.loc = lib_loc)
+  library(emmeans, lib.loc = lib_loc)
+  library(exact2x2, lib.loc = lib_loc)
+  library(plyr, lib.loc = lib_loc)
+  library(rstudioapi, lib.loc = lib_loc)
+  library(magrittr, lib.loc = lib_loc)
+  library(car, lib.loc = lib_loc)
+  ##library(ggpubr, lib.loc = lib_loc)
+  ##library(rstatix, lib.loc = lib_loc)
+  ##library(DescTools, lib.loc = lib_loc)
+  rm(lib_loc)
+} else {
+  
+  if (!require(paran)) install.packages("paran")
+  
+  if (!require(emmeans)) install.packages("emmeans")
+  if (!require(car)) install.packages("car")
+  if (!require(exact2x2)) install.packages("exact2x2")
+  if (!require(ggplot2)) install.packages("ggplot2")
+  if (!require(plyr)) install.packages("plyr")
+  if (!require(rstudioapi)) install.packages("rstudioapi")
+  if (!require(magrittr)) install.packages("magrittr")
+  ##if (!require(DescTools)) install.packages("DescTools")
+  ##if (!require(rstatix)) install.packages("rstatix")
+  ##if (!require(ggpubr)) install.packages("ggpubr")
+
+}
+```
+
+### Current script file
+
+```{r}
+this.script <- basename(rstudioapi::getActiveDocumentContext()$path)
+cat("Current script:", this.script)
+
+```
