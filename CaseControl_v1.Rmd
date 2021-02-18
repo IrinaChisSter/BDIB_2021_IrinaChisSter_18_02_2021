@@ -305,10 +305,10 @@ Understanding the forest plot:
 ![](Meta_split.png)
 
 (A) Summary odds ratio of asbestos-exposed and non-smoking compared with
-not asbestos-exposed and non-smoking
+    not asbestos-exposed and non-smoking
 
 (B) Summary odds ratio of non-exposure to asbestos and smoking compared
-with not asbestos-exposed and non-smoking.
+    with not asbestos-exposed and non-smoking.
 
 Non--smoking:
 
