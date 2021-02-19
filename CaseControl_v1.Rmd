@@ -467,3 +467,38 @@ funnel(rtf)
     -   Socio-economic aspects
 
     -   Comorbidities
+
+# PYRAMID OF CLINICAL EVIDENCE
+
+![](ClinicalEvidencePyramid.png)
+
+# BIAS AND CONFOUNDING
+
+-   Randomisation
+
+    -   Only experimental studies
+
+    -   Ensures that known and unknown confounders are similarly
+        distributed across groups
+
+    -   Not always possible
+
+-   Restriction (inclusion/exclusion criteria)
+
+    -   Young population
+
+    -   Non-smokers
+
+    -   Elderly
+
+-   Matching
+
+    -   Suitable for case-control studies
+
+    -   Expensive
+
+-   Statistical Analysis
+
+    -   Stratification
+
+    -   Statistical/Mathematical Modelling techniques
